@@ -23,3 +23,9 @@ for epoch in range(num_epochs):
         optimizer.zero_grad() # zero grad is used to clear the gradients of the model parameters because gradients are accumulated by default
         loss.backward() # compute the gradients of the loss with respect to the model parameters
         optimizer.step() # update the model parameters using the computed gradients
+    
+    ### Evaluation Step
+    model.eval() # set the model to evaluation mode
+    with torch.no_grad(): # no gradients are computed in this block, prevents unnecessary graph computations and saves memory
+        valid_accuracy = compute_accuracy(model, valid_loader, device) # compute the accuracy of the model on the validation set
+        print(f"Epoch {epoch}, Validation Accuracy: {valid_accuracy}")
