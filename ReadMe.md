@@ -53,3 +53,11 @@ a.shape
 ```
 
 # Automatic Differentiation Engine
+
+```
+Logistic Regression
+
+[computation graph](computation-graph.jpeg)
+
+    
+```
