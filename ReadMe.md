@@ -58,6 +58,29 @@ a.shape
 Logistic Regression
 
 [computation graph](computation-graph.jpeg)
-
     
 ```
+
+# Deep Learning
+## Neural Network in 3 steps:
+1. Defining the dataset
+2. Defining the model
+3. Defining the training loop
+
+### Defining the model:
+
+```
+import torch
+
+torch.nn.Sequential -> chain individual layers
+torch.nn.Conv2d -> convolution layer
+forward -> 
+
+example: pytorch_cnn.py
+
+```
+
+### Defining the training loop:
+1. initialize the model
+2. move model to GPU [optional]
+3. define the optimize like adam
