@@ -84,3 +84,7 @@ example: pytorch_cnn.py
 1. initialize the model
 2. move model to GPU [optional]
 3. define the optimize like adam
+
+# Why Pytorch?
+It is very pythonic and flexible. 
+If you do reseach, it is very easy to make change in the network and make custom layer in very less number of lines.
